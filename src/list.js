@@ -11,7 +11,7 @@ class List extends React.Component {
     console.log(this.props);
  };
  componentDidMount(){
-    fetch('http://10.216.2.82/shogee-master/shogee-master/api.php?route=demo')
+    fetch('https://app.shogee.com/api.php?route=demo')
     .then(result=>result.json())
     .then(resp=> {
       let data = resp.data.map((item, index) => {

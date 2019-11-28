@@ -11,7 +11,7 @@ class Details extends React.Component {
     console.log(this.props.match.params.id);
  };
  componentDidMount(){
-  fetch('http://10.216.2.82/shogee-master/shogee-master/api.php?route=demo/productDescription&id='+ this.state.id)
+  fetch('https://app.shogee.com/api.php?route=demo/productDescription&id='+ this.state.id)
   .then(result=>result.json())
   .then(resp=> {
     let data = resp.data.Description; 
