@@ -23,7 +23,7 @@ class List extends React.Component {
             </div>
           )
       })
-      this.setState({list:data});  
+      this.setState({list:data});
     });
  }
  render(){
