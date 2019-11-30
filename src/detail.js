@@ -5,10 +5,10 @@ class Details extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      id: this.props.match.params.id,
+      id: this.props.params.id,
       list:'',
     }
-    console.log(this.props.match.params.id);
+    console.log(this.props.params.id);
  };
  componentDidMount(){
   fetch('https://app.shogee.com/api.php?route=demo/productDescription&id='+ this.state.id)

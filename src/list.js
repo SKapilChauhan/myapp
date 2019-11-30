@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-keeper';
 import './App.css';
 
 class List extends React.Component {
@@ -30,6 +30,11 @@ class List extends React.Component {
     return (
       <div className="listing">
           {this.state.list}
+          <div>
+              <Link className="list" to={'/details/3'} >
+                Product 4   
+              </Link>
+            </div>
       </div>
     );
   }

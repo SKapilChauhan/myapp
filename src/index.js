@@ -3,18 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter, Route } from 'react-keeper';
 import List from './list';
 import Details from './detail';
 
 const routing = (
-    <Router>
+    <HashRouter>
       <div>
-        <Route exact path="/" component={App} />
+        <Route cache path="/" component={App} />
         <Route path="/list" component={List} />
         <Route path="/details/:id" component={Details} />
       </div>
-    </Router>
+    </HashRouter>
   )
 
 ReactDOM.render(routing, document.getElementById('root'));
